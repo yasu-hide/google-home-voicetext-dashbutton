@@ -1,0 +1,10 @@
+---
+version: "2"
+services:
+  google-home-voicetext-dashbutton:
+    image: vet5lqplpecmpnqb/google-home-voicetext-dashbutton
+    network_mode: host
+    env_file:
+      - .env
+    volumes:
+      - ${PWD}/dashbutton.json:/tmp/dashbutton.json:ro

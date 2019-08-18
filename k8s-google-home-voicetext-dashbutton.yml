@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: google-home-voicetext-dashbutton
+spec:
+  selector:
+    matchLabels:
+      app: google-home-voicetext-dashbutton
+  template:
+    metadata:
+      labels:
+        app: google-home-voicetext-dashbutton
+    spec:
+      containers:
+      - name: google-home-voicetext-dashbutton
+        image: vet5lqplpecmpnqb/google-home-voicetext-dashbutton:latest
+        resources:
+          limits:
+            memory: "32Mi"
+            cpu: "500m"

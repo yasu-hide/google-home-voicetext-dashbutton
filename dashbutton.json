@@ -1,0 +1,15 @@
+{
+    "00:00:de:ad:be:ef": {
+        "message": "",
+        "speaker": "hikari",
+        "emotion": "happiness",
+        "emotion_level": "high",
+        "servers": [
+            ""
+        ]
+    },
+    "00:00:fe:e1:de:ad": {
+        "message": "",
+        "servers": ""
+    }
+}

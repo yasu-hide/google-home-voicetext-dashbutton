@@ -1,0 +1,14 @@
+{
+    "name": "dashbutton",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "scan": "dash-button scan",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "node-dash-button": "^0.6.1",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.4"
+    }
+}
