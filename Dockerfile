@@ -1,4 +1,4 @@
-FROM node:16.17.0-bullseye-slim as builder
+FROM node:16.18.1-bullseye-slim as builder
 WORKDIR /tmp
 RUN apt-get update \
     && apt-get install -y git python build-essential libpcap-dev \
@@ -10,7 +10,7 @@ RUN npm config set unsafe-perm true \
     && npm install; exit 0 \
     && npm config set unsafe-perm false
 
-FROM node:16.17.0-bullseye-slim
+FROM node:16.18.1-bullseye-slim
 WORKDIR /tmp
 RUN apt-get update \
     && apt-get install -y libpcap-dev \
